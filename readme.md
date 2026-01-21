@@ -1,5 +1,16 @@
 # Quantum Mechanical Keyboard Firmware
 
+KeebDeck Basic 刷固件:
+
+```
+# 👉 0x08000000 是 STM32 所有 Cortex-M 系列默认的 Flash 映射起点
+dfu-util   -a 0  -s 0x08000000:leave   -D solderparty_keebdeck_basic_default.bin
+```
+
+第一次自动进入bootloader，后续需要按住键盘左上角插电自动进入bootloader即可刷入固件(QMK实现的功能)。
+键盘背光调节按住MO(1)按键同时按空格（三个空格钮都可以）即可切换背光亮度levels。
+
+
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
 [![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/qmk)
 [![Docs Status](https://img.shields.io/badge/docs-ready-orange.svg)](https://docs.qmk.fm)

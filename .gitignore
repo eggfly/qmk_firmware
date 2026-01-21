@@ -31,7 +31,6 @@ firmware_list.json
 # QMK-specific
 api_data/v1
 quantum/version.h
-*.bin
 *.eep
 *.hex
 *.qmk
